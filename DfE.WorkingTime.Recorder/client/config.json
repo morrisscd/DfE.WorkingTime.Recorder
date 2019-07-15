@@ -1,0 +1,6 @@
+{
+  "paths": {
+    "cssDestination": "./wwwroot/assets/css",
+    "cssSource": "./client/sass/**/*.scss"
+  }
+}

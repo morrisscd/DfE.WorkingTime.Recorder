@@ -1,0 +1,154 @@
+// Variables
+$govuk-global-styles: true;
+
+// Imports
+@import "node_modules/govuk-frontend/all";
+@import "components/cookie-banner";
+@import "node_modules/govuk-frontend/settings/all";
+
+// Extra styles
+.block {
+    display: block;
+}
+
+.c-align {
+    text-align: center;
+}
+
+.r-align {
+    text-align: right;
+}
+
+.l-align {
+    text-align: left;
+}
+
+.gov-light-purple-bg {
+    background-color: govuk-colour("light-purple");
+}
+
+.gov-orange-bg {
+    background-color: govuk-colour("orange");
+}
+
+.badge {
+    color: govuk-colour("white");
+    padding: 3px 5px 0 5px;
+    ;
+    border-radius: 3px;
+}
+
+.card-view {
+    height: 50px;
+    display: block;
+    padding: 30px 20px;
+    text-align: center;
+    border: 1px solid;
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+.card-view-new {
+    border-style: dashed;
+}
+
+.card-view-product {
+    background-color: govuk-colour("blue");
+    border-color: govuk-colour("blue");
+}
+
+a.card-view-product,
+a.card-view-product span {
+    color: govuk-colour("white") !important;
+}
+
+pre {
+    background-color: govuk-colour("grey-4");
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 10px 15px;
+    margin-top: 0;
+}
+
+pre.fixed-height {
+    height: 250px;
+    overflow: scroll;
+    position: relative;
+}
+
+.manage-apim a {
+    display: block;
+    text-decoration: none;
+    padding: 10px 4px 8px 10px;
+    border-left: 4px solid govuk-colour("grey-3");
+}
+
+.manage-apim a:hover {
+    background-color: govuk-colour("grey-4");
+}
+
+.manage-apim a.selected,
+.manage-apim a.selected:hover {
+    background-color: govuk-colour("grey-4");
+}
+
+.non-cta-button {
+    padding: 12px 20px 10px 20px;
+    text-decoration: none;
+}
+
+.non-cta-button--danger {
+    border-color: govuk-colour("red");
+    color: govuk-colour("red") !important;
+}
+
+.non-cta-button--danger:hover {
+    border-color: govuk-colour("bright-red");
+    color: govuk-colour("bright-red") !important;
+}
+
+.govuk-panel--highlight {
+    background-color: govuk-colour("grey-4");
+}
+
+.govuk-panel--notice {
+    background-color: govuk-colour("white");
+    border: 4px solid govuk-colour("turquoise");
+}
+
+.govuk-textarea--nowrap {
+    white-space: nowrap;
+    overflow: auto;
+}
+
+.herospace {
+    background-color: govuk-colour("blue");
+}
+
+.herospace h1,
+.herospace p {
+    color: govuk-colour("white");
+}
+
+.herospace .govuk-button {
+    color: #005ea5;
+    background-color: #fff;
+    -webkit-box-shadow: 0 2px 0 #004274;
+    box-shadow: 0 2px 0 #004274;
+}
+
+.startpage-hooks h2 {
+    border-bottom: 5px solid govuk-colour("blue");
+}
+
+.v-align-top {
+    vertical-align: top;
+}
+
+#documentationDownloadLink {
+    margin-top:10px;
+}
+
+.app-fl {
+    float: right;
+}

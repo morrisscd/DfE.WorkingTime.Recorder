@@ -1,0 +1,229 @@
+﻿.side-nav {
+    display: block;
+}
+
+.side-nav__link:after {
+    content: "";
+}
+
+.side-nav {
+    border-right: none;
+}
+
+@media(min-width: 769px) {
+    .side-nav {
+        border-right: 1px solid #bfc1c3;
+    }
+}
+
+.side-nav__list {
+    position: relative;
+    list-style: none;
+}
+
+.side-nav__list--selected, .side-nav__list--selected:hover {
+    .side-nav__link {
+        color: govuk-colour("white");
+        background-color: govuk-colour("blue");
+    }
+}
+
+.side-nav__link {
+    padding: 12px 30px 8px 15px;
+    text-decoration: none;
+    display: block;
+    background-color: transparent;
+
+    &:hover {
+        background-color: govuk-colour("blue");
+    }
+}
+
+.side-nav--child {
+    margin-top: 0;
+    border-right: none;
+    border-left: 4px solid govuk-colour("blue");
+
+    .side-nav__link {
+        padding-left: 10px;
+    }
+
+    .side-nav__list--selected {
+        .side-nav__link {
+            color: govuk-colour("blue");
+            background-color: transparent;
+        }
+    }
+}
+
+.side-nav__component {
+    border-left: 0;
+
+    &:first-child {
+        border-left: 0;
+    }
+}
+
+.side-nav__list--selected,
+.side-nav__list--selected:hover {
+    > .side-nav__link {
+        color: white !important;
+        background-color: #005ea5 !important;
+    }
+}
+
+a,
+.button--link-style {
+    &:hover,
+    &:focus,
+    &:active {
+    }
+}
+
+.side-nav__link:hover {
+    background-color: #fff;
+    text-decoration: underline;
+}
+
+.side-nav__link:focus {
+    background-color: #ffbf47;
+}
+
+.code--block,
+.code--slim {
+    font-family: Consolas,Monaco,"Andale Mono","Ubuntu Mono",monospace;
+    color: #0b0c0c;
+    font-size: 14px;
+}
+
+.code--block {
+    border: none;
+    margin: 0;
+    line-height: 1.5em;
+    padding: 10px;
+    word-wrap: break-word;
+}
+
+.code--slim {
+    border: 1px solid #DFE0E7;
+    border-radius: 4px;
+    padding: 2px 4px;
+    display: inline-block;
+    background-color: #F7F7F7;
+    line-height: 1.1em;
+}
+
+.documentation-pagination {
+    display: block;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
+}
+
+#content {
+    max-width: 960px;
+    margin: 0 15px;
+}
+/* @media all and (min-width:641px) */
+#content {
+    margin: 0 30px;
+}
+
+#content {
+    max-width: 960px;
+    margin: 0 15px;
+}
+/* @media all and (min-width:641px) */
+#content {
+    margin: 0 30px;
+}
+
+#content {
+    padding-bottom: 30px;
+    outline: none;
+}
+/* @media all and (min-width:769px) */
+#content {
+    padding-bottom: 90px;
+}
+
+#content {
+    position: relative;
+}
+/* @media all and (min-width:641px) */
+ul li, nav ul li {
+    font-size: 19px;
+    line-height: 1.3157;
+}
+
+.documentation-pagination__item {
+    font-size: 16px;
+    list-style: none;
+}
+
+.documentation-pagination__link {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+}
+
+a, a:visited {
+    color: #4c2c92;
+}
+
+a, .link-style, .button--link-style, .button--link-style {
+    color: #005ea5;
+}
+
+.documentation-pagination__link:hover, .documentation-pagination__link:active, .documentation-pagination__link:visited {
+    color: #005ea5;
+}
+
+.documentation-pagination__link-title {
+    display: block;
+}
+
+.visually-hidden, .visuallyhidden {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0px, 0px, 0px, 0px);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+}
+
+.documentation-pagination__link-label {
+    display: inline-block;
+    margin-top: 0.1em;
+    text-decoration: underline;
+    margin-left: 2rem;
+}
+
+.documentation-pagination__link-icon {
+    font-size: 24px;
+    line-height: 1.25;
+    display: inline-block;
+    margin-bottom: 1px;
+    height: 0.48em;
+    width: 0.63em;
+}
+
+.documentation-pagination__link-text {
+    font-weight: bold;
+    font-size: 2rem;
+    margin-left: 1rem;
+    color: #005ea5;
+    font-size: 20px;
+}
+
+.documentation-pagination__link:visited {
+    color: #005ea5;
+}
+
+.documentation-pagination__link:hover,
+.documentation-pagination__link:active {
+    background-color: #f8f8f8;
+}
