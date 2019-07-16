@@ -1,15 +1,29 @@
 ﻿@page
+@addTagHelper *, DfE.WorkingTime.Recorder
+
 @model IndexModel
 
 @{
     ViewData["Title"] = "Working Time Recorder";
 }
 
+<div class="govuk-width-container">
+    <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+            @*<h1 class="govuk-heading-xl">
+            Developer Hub
+        </h1>*@
+            <p class="govuk-!-font-size-24">
+                Use this service to record your daily hours worked.
+            </p>
 
-<div>
-    <h1 class="govuk-heading-xl">
-        Developer Hub
-    </h1>
+            <vc:working-time-control working-time-control-type="Working time Component">
+            </vc:working-time-control>
+            @*<p class="govuk-!-font-size-24">
+            We are testing this service with selected users. It is not currently available to everyone.
+        </p>*@
+        </div>
+    </div>
 </div>
 
 @*<div class="herospace govuk-!-padding-top-9 govuk-!-padding-bottom-6 govuk-!-margin-bottom-6">
