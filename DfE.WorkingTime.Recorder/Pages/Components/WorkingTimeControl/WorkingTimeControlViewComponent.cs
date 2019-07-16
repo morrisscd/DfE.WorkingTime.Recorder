@@ -13,9 +13,9 @@ namespace DfE.WorkingTime.Recorder.Pages.Components.WorkingTimeControl
         }
 
         public IViewComponentResult
-        Invoke()
+        Invoke(string workingTimeControlType)
         {
-        return View("Default");
+        return View("Default", workingTimeControlType);
         }
 
     }
