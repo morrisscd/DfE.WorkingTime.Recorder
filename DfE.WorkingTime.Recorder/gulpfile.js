@@ -1,4 +1,4 @@
-﻿/// <binding AfterBuild='sass' />
+﻿/// <binding BeforeBuild='sass' AfterBuild='sass' />
 'use strict';
 const config = require('./client/config.json')
 
