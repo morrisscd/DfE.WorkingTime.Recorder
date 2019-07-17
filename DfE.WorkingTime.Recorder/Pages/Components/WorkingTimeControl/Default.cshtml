@@ -1,8 +1,14 @@
-﻿
+﻿@using DfE.WorkingTime.Recorder.Pages.Components.WorkingTimeControl;
 
-@model  string
+@model WorkingTimeControlViewComponent
 
 
-<h2>
-    @Model
-</h2>
+<div class="govuk-form-group">
+    <label class="govuk-label">
+        Enter product name
+    </label>
+    <span class="govuk-hint">A friendly name made up of numbers, letters and spaces. A maximum of 50 characters.</span>
+
+
+    <input id="productName" asp-for="@Model.time.StartTime" type="text" />
+</div>
